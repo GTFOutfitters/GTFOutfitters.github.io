@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's time to go!</title>
+    <title>GTFOutfitters - It's time to go!</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,6 +11,7 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
         .hero-bg {
             background-image: url('https://images.unsplash.com/photo-1501555088652-021faa106b9b?q=80&w=2073&auto=format&fit=crop');
@@ -23,32 +24,29 @@
 
     <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-4">
+        <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <a href="#" class="flex items-center space-x-2">
-                    <svg class="h-8 w-8 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                <a href="index.html" class="flex items-center">
+                    <!-- New SVG Logo with fine lines -->
+                    <svg class="h-12 w-auto" viewBox="0 0 175 40" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(0, -2)">
+                            <path d="M40 35 L0 35 L20 5 L40 35 Z" fill="none" stroke="#2d3748" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 5 L15 20" fill="none" stroke="#2d3748" stroke-width="1" stroke-linecap="round"/>
+                            <path d="M20 5 L25 20" fill="none" stroke="#2d3748" stroke-width="1" stroke-linecap="round"/>
+                        </g>
+                        <text x="48" y="27" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#f97316">GTF</text>
+                        <text x="76" y="27" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#2d3748">OUTFITTERS</text>
                     </svg>
-                    <span class="font-bold text-xl">Wanderlust</span>
                 </a>
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-gray-600">
-                    <a href="#" class="hover:text-gray-900">About</a>
-                    <a href="#" class="hover:text-gray-900">Initiatives</a>
-                    <a href="#" class="hover:text-gray-900">Contact Us</a>
+                    <a href="#about" class="hover:text-gray-900">About</a>
+                    <a href="gear.html" class="hover:text-gray-900">Camping Gear</a>
+                    <a href="#initiatives" class="hover:text-gray-900">Initiatives</a>
+                    <a href="#contact" class="hover:text-gray-900">Contact Us</a>
                     <a href="#" class="hover:text-gray-900">Login</a>
-                    <!-- Social Icons -->
-                    <a href="#" class="text-gray-500 hover:text-gray-800">
-                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h11.23v-9.46H9.99v-3.6h3.01V8.21c0-3.02 1.8-4.66 4.53-4.66 1.3 0 2.68.23 2.68.23v3.06h-1.5c-1.48 0-1.93.91-1.93 1.84v2.22h3.4l-.55 3.6h-2.85V24h5.96c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0z"/></svg>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-800">
-                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.796-1.56 2.457-2.549z"/></svg>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-800">
-                         <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.79 0 0 .774 0 1.729v20.542C0 23.227.79 24 1.771 24h20.451C23.21 24 24 23.227 24 22.271V1.729C24 .774 23.21 0 22.225 0z"/></svg>
-                    </a>
                 </nav>
                 
                 <!-- Take Action Button -->
@@ -72,12 +70,11 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Initiatives</a>
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact Us</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+                <a href="gear.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Camping Gear</a>
+                <a href="#initiatives" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Initiatives</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact Us</a>
                 <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Login</a>
-                <div class="border-t border-gray-200 my-2"></div>
-                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-gray-700">Take Action</a>
             </div>
         </div>
     </header>
@@ -89,28 +86,52 @@
             <div class="bg-black/30 p-8 md:p-12 rounded-lg">
                 <h1 class="text-4xl md:text-6xl font-bold leading-tight">It's time to go!</h1>
                 <p class="mt-4 text-xl md:text-2xl">Buy our stuff</p>
-                <a href="#" class="mt-8 inline-block bg-white text-gray-800 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-200 transition-colors">
+                <a href="gear.html" class="mt-8 inline-block bg-white text-gray-800 px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-200 transition-colors">
                     Learn More
                 </a>
             </div>
         </section>
 
-        <!-- Placeholder for other sections -->
-        <section class="py-20">
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-50">
             <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold">Your next adventure awaits.</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-gray-600">
-                    This is where you can add more sections to your website, like featured products, testimonials, or more information about your mission. Just build them out below this section.
+                <h2 class="text-3xl font-bold">About GTFOutfitters</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+                    GTFOutfitters was founded on a simple principle: the world is meant to be explored. We believe that the best memories are made outdoors, under the stars, and on the trail. We provide high-quality, durable gear designed to withstand the elements and enhance your adventures. Our mission is to equip and inspire a community of explorers to get outside and connect with nature.
                 </p>
             </div>
         </section>
+
+        <!-- Initiatives Section -->
+        <section id="initiatives" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold">Our Initiatives</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+                    We're committed to preserving the wild places we love. A portion of every sale goes directly to trail maintenance and conservation projects across the country. We partner with local organizations to host clean-up events and promote responsible outdoor ethics through our "Leave It Better" campaign.
+                </p>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold">Contact Us</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+                    Have a question or a story to share? We'd love to hear from you. Reach out to our team, and let's plan your next adventure together.
+                </p>
+                <a href="mailto:hello@gtfoutfitters.com" class="mt-6 inline-block bg-gray-800 text-white px-8 py-3 rounded-md text-lg font-semibold hover:bg-gray-700 transition-colors">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-100">
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col md:flex-row items-center justify-between">
-                <p class="text-gray-600 text-sm">&copy; 2025 Wanderlust. All Rights Reserved.</p>
+                <p class="text-gray-600 text-sm">&copy; 2025 GTFOutfitters. All Rights Reserved.</p>
                 <p class="text-gray-600 text-sm mt-4 md:mt-0">Our mission is to create a page that people can visit.</p>
             </div>
         </div>
